@@ -23,7 +23,7 @@ public abstract class Beverage {
     
     /**
      * Calcula el costo de la bebida
-     * @return
+     * @return Costo de la bebida
      */
     public abstract double cost();
 }
