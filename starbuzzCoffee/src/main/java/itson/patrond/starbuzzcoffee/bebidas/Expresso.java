@@ -6,25 +6,27 @@ package itson.patrond.starbuzzcoffee.bebidas;
 
 /**
  * Clase que representa una bebida Expresso
+ * 
  * @author Francisco de Jesús López Ruiz - 00000247037
- * Instituto Tecnológico de Sonora (ITSON)
+ *         Instituto Tecnológico de Sonora (ITSON)
  */
 public class Expresso extends Beverage {
-    
+
     /**
      * Constructor de la clase
      */
-    public Expresso(){
+    public Expresso() {
         description = "Cafe Expresso";
     }
-    
+
     /**
      * Calcula el costo de la bebida Expresso
+     * 
      * @return Costo de la bebida
      */
     @Override
     public double cost() {
         return 36.00;
     }
-    
+
 }
