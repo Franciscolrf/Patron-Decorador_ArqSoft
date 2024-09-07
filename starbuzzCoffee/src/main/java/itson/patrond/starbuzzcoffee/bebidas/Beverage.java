@@ -5,9 +5,25 @@
 package itson.patrond.starbuzzcoffee.bebidas;
 
 /**
- *
- * @author Fran
+ * Clase abstracta que representa una bebida
+ * @author Francisco de Jesús López Ruiz - 00000247037
+ * Instituto Tecnológico de Sonora (ITSON)
  */
-public class Beverage {
+public abstract class Beverage {
     
+    String description = "Bebida Main";
+    
+    /**
+     * Obtiene la descripción de la bebida
+     * @return
+     */
+    public String getDescription(){
+        return description;
+    }
+    
+    /**
+     * Calcula el costo de la bebida
+     * @return
+     */
+    public abstract double cost();
 }
