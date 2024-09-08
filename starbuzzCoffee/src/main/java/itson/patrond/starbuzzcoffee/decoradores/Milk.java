@@ -31,6 +31,6 @@ public class Milk extends Condiment {
      */
     @Override
     public double getCost() {
-        return beverage.getCost() + 8.00; 
+        return beverage.getCost() + 8.00;
     }
 }

@@ -4,10 +4,33 @@
  */
 package itson.patrond.starbuzzcoffee.decoradores;
 
+import itson.patrond.starbuzzcoffee.bebidas.Beverage;
+
 /**
- *
- * @author Fran
+ * Clase que representa un condimento Chocolate
+ * 
+ * @author Francisco de Jesús López Ruiz - 00000247037
+ *         Instituto Tecnológico de Sonora (ITSON)
  */
-public class Chocolate {
-    
+public class Chocolate extends Condiment {
+
+    /**
+     * Constructor de la clase
+     * 
+     * @param beverage
+     */
+    public Chocolate(Beverage beverage) {
+        super(beverage);
+        description = "Chocolate";
+    }
+
+    /**
+     * Calcula el costo de la bebida con el condimento Chocolate
+     * 
+     * @return Costo de la bebida con el condimento Chocolate
+     */
+    @Override
+    public double getCost() {
+        return beverage.getCost() + 12.00; // Costo adicional para Chocolate
+    }
 }
