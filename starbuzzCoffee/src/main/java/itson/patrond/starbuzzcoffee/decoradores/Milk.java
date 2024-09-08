@@ -4,10 +4,33 @@
  */
 package itson.patrond.starbuzzcoffee.decoradores;
 
+import itson.patrond.starbuzzcoffee.bebidas.Beverage;
+
 /**
- *
- * @author Fran
+ * Clase que representa un condimento Milk
+ * 
+ * @author Francisco de Jesús López Ruiz - 00000247037
+ *         Instituto Tecnológico de Sonora (ITSON)
  */
-public class Milk {
-    
+public class Milk extends Condiment {
+
+    /**
+     * Constructor de la clase
+     * 
+     * @param beverage
+     */
+    public Milk(Beverage beverage) {
+        super(beverage);
+        description = "Milk";
+    }
+
+    /**
+     * Calcula el costo de la bebida con el condimento Milk
+     * 
+     * @return Costo de la bebida con el condimento Milk
+     */
+    @Override
+    public double getCost() {
+        return beverage.getCost() + 8.00; 
+    }
 }
