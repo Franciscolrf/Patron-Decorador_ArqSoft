@@ -11,19 +11,20 @@ package itson.patrond.starbuzzcoffee.bebidas;
  */
 public abstract class Beverage {
     
-    String description = "Bebida Main";
+    protected String description = "Bebida desconocida";
     
     /**
-     * Obtiene la descripción de la bebida
-     * @return
+     * Obtiene la descripción de la bebida.
+     * @return Descripción de la bebida.
      */
-    public String getDescription(){
+    public String getDescription() {
         return description;
     }
     
     /**
-     * Calcula el costo de la bebida
-     * @return Costo de la bebida
+     * Calcula el costo de la bebida.
+     * Las subclases concretas deben implementar este método para devolver el costo específico.
+     * @return Costo de la bebida.
      */
-    public abstract double cost();
+    public abstract double getCost();
 }
