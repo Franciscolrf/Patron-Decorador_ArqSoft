@@ -4,10 +4,34 @@
  */
 package itson.patrond.starbuzzcoffee.decoradores;
 
+import itson.patrond.starbuzzcoffee.bebidas.Beverage;
+
 /**
- *
- * @author Fran
+ * Clase que representa un condimento Whipped Cream
+ * 
+ * @author Francisco de Jesús López Ruiz - 00000247037
+ *         Instituto Tecnológico de Sonora (ITSON)
  */
-public class WhippedCream {
-    
+public class WhippedCream extends Condiment {
+
+    /**
+     * Constructor de la clase
+     * 
+     * @param beverage
+     */
+    public WhippedCream(Beverage beverage) {
+        super(beverage);
+        description = "Whipped Cream";
+    }
+
+    /**
+     * Calcula el costo de la bebida con el condimento Whipped Cream
+     * 
+     * @return Costo de la bebida con el condimento Whipped Cream
+     */
+    @Override
+    public double getCost() {
+        return beverage.getCost() + 9.00;
+    }
+
 }

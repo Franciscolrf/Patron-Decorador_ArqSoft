@@ -31,6 +31,6 @@ public class Chocolate extends Condiment {
      */
     @Override
     public double getCost() {
-        return beverage.getCost() + 12.00; // Costo adicional para Chocolate
+        return beverage.getCost() + 12.00;
     }
 }
